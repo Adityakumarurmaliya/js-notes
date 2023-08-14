@@ -177,20 +177,21 @@ var arr = [1, 2, 3, 4, 5, 6, 7];
 let myArr = ["Fan", "Camera", 34, null, true];
 // Array Methods
 // console.log(myArr.length);
-// myArr.pop();
-// myArr.push("harry")
-// myArr.shift()
-// const newLen = myArr.unshift("Harry")
-// console.log(newLen);
+// myArr.pop();  //arry last element will removed
+// myArr.push("harry")  // harry added in last
+// myArr.shift() // frist element will removed
+//myArr.unshift("Harry") // harry will add in frist 0th index
+// const newLen = myArr.unshift("Harry") // 6 :- this will return new arr length
+// console.log(newLen);6 :- this will return new arr length
 // console.log(myArr);
 
 // String Methods in JavaScript
 let myLovelyString = "Harry is a good boy good good Harry";
-// console.log(myLovelyString.length)
-// console.log(myLovelyString.indexOf("good"))
-// console.log(myLovelyString.lastIndexOf("good"))
+// console.log(myLovelyString.length) //get length of string
+// console.log(myLovelyString.indexOf("good")) // to find index of good 
+// console.log(myLovelyString.lastIndexOf("good")) // where its ending
 
-// console.log(myLovelyString.slice(1,4))
+// console.log(myLovelyString.slice(1,4)) // arr :-1 include and 4 exclude
 d = myLovelyString.replace("Harry", "Rohan");
 // d = d.replace("good", "bad");
 // console.log(d, myLovelyString)
