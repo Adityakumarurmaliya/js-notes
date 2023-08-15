@@ -192,9 +192,9 @@ let myLovelyString = "Harry is a good boy good good Harry";
 // console.log(myLovelyString.lastIndexOf("good")) // where its ending
 
 // console.log(myLovelyString.slice(1,4)) // arr :-1 include and 4 exclude
-d = myLovelyString.replace("Harry", "Rohan");
-// d = d.replace("good", "bad");
-// console.log(d, myLovelyString)
+d = myLovelyString.replace("Harry", "Rohan"); //(Replace method frist method ko hi replace ker ta hai)
+// d = d.replace("good", "bad"); //Harry is a bad boy good good Harry is a good boy good good ( this will work only frist occurence :- its mean only frist good will convert into b)
+// console.log(d, myLovelyString) //Rohan is a good boy good good Harry is a good boy good good
 
 let myDate = new Date();
 // console.log(myDate.getTime());
