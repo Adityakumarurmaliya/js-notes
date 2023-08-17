@@ -197,11 +197,12 @@ d = myLovelyString.replace("Harry", "Rohan"); //(Replace method frist method ko 
 // console.log(d, myLovelyString) //Rohan is a good boy good good Harry is a good boy good good
 
 let myDate = new Date();
-// console.log(myDate.getTime());
-// console.log(myDate.getFullYear());
-// console.log(myDate.getDay());
-// console.log(myDate.getMinutes());
-// console.log(myDate.getHours());
+// console.log(myDate); // this will provide you current time
+// console.log(myDate.getTime()); // this will give you time in seconds
+// console.log(myDate.getFullYear());// this will provide your current year like :-2023
+// console.log(myDate.getDay()); //this will provide  you current day like mon-0, tue-1,wed -2, thurs-3 fri-4 sat-5 sun -6 so ytyhis will provide you day between 1to6 so today is :-3
+// console.log(myDate.getMinutes()); // get cuurrent minutes
+// console.log(myDate.getHours()); // get  current  hours
  
 // DOM Manipulation
 let elem = document.getElementById('click');
