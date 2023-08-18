@@ -234,8 +234,8 @@ tn[0].replaceChild(createdElement2, createdElement); // this will replace
  
 // Selecting using Query
 // sel = document.querySelector('.container')
-// console.log(sel);// you will get frist container class element it mena whole div part.
-// sel = document.querySelectorAll('.container')
+// console.log(sel);// you will get frist container class element it mean whole div part.
+// sel = document.querySelectorAll('.container') // get all div present located with container class
 // console.log(sel)
 
 // function clicked(){
