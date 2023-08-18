@@ -68,6 +68,7 @@
             
 
             <button   id="add" class="btn btn-primary">Add to list</button>
+             <!--id="add"  we id = add to make event in javaScript      -->
             <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
          
 
@@ -148,13 +149,13 @@
                 });
                 tableBody.innerHTML = str;
             }
-            add = document.getElementById("add");
+            add = document.getElementById("add"); // using add id from html
             add.addEventListener("click", getAndUpdate);
             update();
             function deleted(itemIndex){
                 console.log("Delete", itemIndex);
                 itemJsonArrayStr = localStorage.getItem('itemsJson')
-                itemJsonArray = JSON.parse(itemJsonArrayStr);
+                itemJsonArray = JSON.parse(itemJsonArrayStr); 
                 // Delete itemIndex element from the array
                 itemJsonArray.splice(itemIndex, 1);
                 localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
