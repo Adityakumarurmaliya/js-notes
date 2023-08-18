@@ -238,8 +238,9 @@ tn[0].replaceChild(createdElement2, createdElement); // this will replace
 // sel = document.querySelectorAll('.container') // get all div present located with container class
 // console.log(sel)
 
-// function clicked(){
-//     console.log('The button was clicked')
+//in html you have to create onclick="clicked()"
+// function clicked(){ 
+//     console.log('The button was clicked') // jise hi koi click ker click function ko call ker do - app jitne barr click kero ge console mai uttne bar print hoga
 // }
 // window.onload = function(){
 //     console.log('The document was loaded')
@@ -252,21 +253,21 @@ tn[0].replaceChild(createdElement2, createdElement); // this will replace
 // })
 
 // firstContainer.addEventListener('mouseover', function(){
-//     console.log("Mouse on Container")
+//     console.log("Mouse on Container") // jise hi mouse cointaner ke unnder jaye ga ye frie ho jayega console mai
 // })
 
 // firstContainer.addEventListener('mouseout', function(){
-//     console.log("Mouse out of Container");
+//     console.log("Mouse out of Container");  // jab mouse container ke bahar kero ge then this will fire
 // })
 
 // let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
 // firstContainer.addEventListener('mouseup', function(){
-//     document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+//     document.querySelectorAll('.container')[1].innerHTML = prevHTML; //jab app choddo ge to previous element ho jaye 
 //     console.log("Mouse up when clicked on Container");
 // })
 
 // firstContainer.addEventListener('mousedown', function(){
-//     document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>"
+//     document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>" // or jab mouse click kero ge tab ye screen mai aa jayee 
 //     console.log("Mouse down when clicked on Container");
 // })
 
@@ -280,24 +281,24 @@ summ = (a,b)=>{
 }
 
 logKaro = ()=>{
-    document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired</b>"
+    document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired</b>" // ye pe 2000 mili-second ker ke badd ye fire ho jaye ga sceen mai
     console.log("I am your log")
 }
-// SetTimeout and setinterval
-// clr = setTimeout(logKaro, 5000);
-// clr = setInterval(logKaro, 2000);
+// SetTimeout and setinterval set time out ka phela argument ek function hota hai and 2nd argument is ki kittne second ke baad run ker na chatte ho (5000-2000) is mili-second
+// clr = setTimeout(logKaro, 5000); // setTimeout according to 2nd argument run hoga 5000 mili second baad
+// clr = setInterval(logKaro, 2000); // agar kisi cheez ko  repeatedly ker na ho to setInterval ka use kero
 // use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
 
 // JavaScript localStorage
 // localStorage.setItem('name', 'harry') 
 // localStorage 
 // localStorage.getItem('name')
-// localStorage.removeItem('name')
-// localStorage.clear();
+// localStorage.removeItem('name') //remove for one item
+// localStorage.clear(); // remove all item from storage
 
 // Json 
-// obj = {name: "harry", length: 1, a: {this: 'tha"t'}}
-// jso = JSON.stringify(obj);
+// obj = {name: "harry", length: 1, a: {this: 'tha"t'}} // ye ek object hai i s ko hum ne below line mai string mai convert ker diya hai
+// jso = JSON.stringify(obj); // we convert i t into string
 // console.log(typeof jso)
 // console.log(jso)
 // parsed = JSON.parse(`{"name":"harry","length":1,"a":{"this":"that"}}`)
@@ -305,4 +306,4 @@ logKaro = ()=>{
 
 // Template literals - Backticks
 a = 34;
-console.log(`this is my ${a}`)
+console.log(`this is my ${a}`) // output:- this is my 34 -${a} replace value with that
