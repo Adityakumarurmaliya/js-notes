@@ -307,3 +307,39 @@ logKaro = ()=>{
 // Template literals - Backticks
 a = 34;
 console.log(`this is my ${a}`) // output:- this is my 34 -${a} replace value with that
+
+// ACTION JAVASCRIPT (it is a plane javascript object )
+/* WITH-OUT-REDUX :-agar parent component to child component data pass ker na ho to props ka use ker ter hai its mean PARENT TO CHILD  LAIN PROPS DRILLLING KE KARANE CODE COMPLEX HO JAYEGA  */ 
+/*WITH-REDUX :- Redux ek centralice store create kera ga .jo bhi data hoga wo store ke under add ker dege or fir hume jis component mai bhi hume data ki need hogi to hum weha se usse get ker lege to wahi kaam hota hai redux for state managment ke liye   */ 
+/*Action shrif hume batata hai ki  type or  item hume pass ker na hai*/
+
+export const ADD = (item) =>{
+//this will work like javascript object
+return{
+type:"ADD_CART",
+/* Playload matlab hum jiss bhi item ko add ker na chate hai humari store ke ander use hum yeha pass kare ge  or(isa zaruri nhi hai hai ki hum yeha Playload hi likhe hum yeha kuch bhi likh sakkte hai) */
+playload:"item.",
+ }
+}
+
+// JAVASCRIPT REDUCERS
+const INIT_STATE = {
+carts :[],
+}
+export const cartreducer = (state = INIT_STATE,action) =>{
+switch (action.type){
+case "ADD_CART":
+return{
+...state,
+hives:[...state.carts,action.payload],
+  };
+ }
+}
+
+
+
+
+
+
+
+
